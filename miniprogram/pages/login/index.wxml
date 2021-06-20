@@ -1,0 +1,8 @@
+<view class="container">
+	<view class="userinfo"></view>
+    <Text className="at-article__h3 title">每日妙记</Text>
+        <!-- <van-button className="btn weixin-color" type="default" round bind:click="login" disabled="false">
+          <van-image src="b" className="btn-image" />
+          微信快捷登录
+        </van-button> -->
+</view>

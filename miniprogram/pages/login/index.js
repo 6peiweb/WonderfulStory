@@ -13,4 +13,7 @@ Page({
             currentDate: event.detail,
         });
     },
+    onClick(e) {
+        console.log(e);
+    }
 });

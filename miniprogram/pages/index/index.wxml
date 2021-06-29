@@ -1,11 +1,18 @@
 <view class="container">
-	<view class="userinfo">sadsa</view>
-	<van-button type="primary">按钮</van-button>
 	<van-tabbar active="{{ active }}" bind:change="onChange">
-		<van-tabbar-item icon="home-o">标签</van-tabbar-item>
-		<van-tabbar-item icon="search">标签</van-tabbar-item>
-		<van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-		<van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+		<van-tabbar-item>
+			<image slot="icon" src="../../../../../images/note.png" style="width: 30px; height: 30px;opacity: 0.5;" />
+			<image slot="icon-active" src="../../../../../images/note.png" style="width: 30px; height: 30px;" />
+		</van-tabbar-item>
+		<van-tabbar-item icon="../../../../images/add.png"></van-tabbar-item>
+		<van-tabbar-item>
+			<image slot="icon" src="../../../../../images/profile.png" style="width: 30px; height: 30px;opacity: 0.5;" />
+			<image slot="icon-active" src="../../../../../images/profile.png" style="width: 30px; height: 30px;" />
+		</van-tabbar-item>
 	</van-tabbar>
-	<van-datetime-picker type="time" value="{{ currentDate }}" min-hour="{{ minHour }}" max-hour="{{ maxHour }}" bind:input="onInput" />
+	<van-tabs active="{{ active }}" border animated sticky custom-class="content-tabs">
+		<van-tab>内容 1</van-tab>
+		<van-tab></van-tab>
+		<van-tab>内容 3</van-tab>
+	</van-tabs>
 </view>

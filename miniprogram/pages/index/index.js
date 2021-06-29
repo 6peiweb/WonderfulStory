@@ -1,16 +1,14 @@
 Page({
     data: {
-        active: 0,
-        currentDate: '12:00',
-        minHour: 10,
-        maxHour: 20,
+        active: 2,
+        top: '5'
     },
     onChange(event) {
-        this.setData({ active: event.detail });
-    },
-    onInput(event) {
-        this.setData({
-            currentDate: event.detail,
-        });
+        const active = event.detail;
+        if (active === 1) {
+            console.log('新增 note');
+            return;
+        }
+        this.setData({ active });
     },
 });

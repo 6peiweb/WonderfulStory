@@ -4,6 +4,13 @@
     <Text class="title">每日妙记</Text>
   </view>
   <view class="operate-wrapper">
-    <van-button type="primary" round icon="wechat" custom-class="login-btn" bind:click="onClick">微信快捷登录</van-button>
+    <van-button
+      round
+      icon="wechat"
+      type="primary"
+      bind:click="onClick"
+      custom-class="login-btn"
+      disabled="{{btnDisabled}}">微信快捷登录</van-button>
   </view>
+  <van-toast id="van-toast" />
 </view>
